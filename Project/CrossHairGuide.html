@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Valorant Site - Crosshairs & Settings</title>
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <header>
+    <h1>My Valorant Site</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AgentGuides.html">Agent Guides</a></li>
+        <li><a href="CrossSettings.html">Crosshairs & Settings</a></li>
+        <li><a href="MapStrat.html">Map Strategies</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="text-container">
+      <h2>Crosshairs & Settings</h2>
+      <p>
+        Share your crosshair settings below. Use this form to tell us your preferred configuration.
+      </p>
+    </div>
+    
+    <!-- Simplified Crosshair Settings Form -->
+    <div class="text-container">
+      <h2>Share Your Crosshair Settings</h2>
+      <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+        <!-- User Information -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+        
+        <!-- Crosshair Color -->
+        <label for="color">Crosshair Color:</label>
+        <select id="color" name="color" required>
+          <option value="">Select a color</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+          <option value="cyan">Cyan</option>
+          <option value="magenta">Magenta</option>
+          <option value="white">White</option>
+          <option value="custom">Custom</option>
+        </select>
+        
+        <!-- Crosshair Opacity as Number Input -->
+        <label for="opacity">Opacity (0-100):</label>
+        <input type="number" id="opacity" name="opacity" min="0" max="100" value="100" required>
+        
+        <!-- Crosshair Thickness -->
+        <label for="thickness">Thickness:</label>
+        <input type="number" id="thickness" name="thickness" placeholder="e.g., 1" step="0.1" required>
+        
+        <!-- Crosshair Length -->
+        <label for="length">Length:</label>
+        <input type="number" id="length" name="length" placeholder="e.g., 10" required>
+        
+        <!-- Crosshair Gap -->
+        <label for="gap">Gap:</label>
+        <input type="number" id="gap" name="gap" placeholder="e.g., 5" required>
+        
+        <!-- Crosshair Style -->
+        <label for="style">Crosshair Style:</label>
+        <select id="style" name="style" required>
+          <option value="">Select a style</option>
+          <option value="static">Static</option>
+          <option value="dynamic">Dynamic</option>
+        </select>
+        
+        <!-- Center Dot Option -->
+        <label for="centerDot">Enable Center Dot:</label>
+        <input type="checkbox" id="centerDot" name="centerDot">
+        <label for="centerDotThickness">Center Dot Thickness:</label>
+        <input type="number" id="centerDotThickness" name="centerDotThickness" placeholder="e.g., 1" step="0.1">
+        
+        <!-- Outline Option -->
+        <label for="outline">Enable Outline:</label>
+        <input type="checkbox" id="outline" name="outline">
+        <label for="outlineOpacity">Outline Opacity (0-100):</label>
+        <input type="number" id="outlineOpacity" name="outlineOpacity" min="0" max="100" value="100" required>
+        <label for="outlineThickness">Outline Thickness:</label>
+        <input type="number" id="outlineThickness" name="outlineThickness" placeholder="e.g., 1" step="0.1">
+        
+        <!-- Newsletter Subscription -->
+        <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe">
+          Subscribe to our newsletter
+        </label>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Fischer White Valorant Website</p>
+  </footer>
+</body>
+</html>
