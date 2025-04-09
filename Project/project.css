@@ -5,9 +5,8 @@ body, h1, h2, p, ul, li, nav, header, main, footer {
 
 
 body {
-  font-family: Arial, sans-serif;
-  background:
-  background-size: cover;
+   font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a0003);
   color: #fff;
 }
 
@@ -159,4 +158,83 @@ form button {
 
 form button:hover {
   background-color: #e10600;
+}
+
+.role-grid {
+  text-align: center;
+  margin: 20px;
+}
+
+.role-grid h2 {
+  color: red;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.role-cards {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.role-card {
+  border: 1px solid red;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.role-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.role-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.role-card p {
+  font-size: 14px;
+}
+
+.role-card:hover {
+  border-color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #FF4655;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #1f1f1f;
+  width: 180px;
+}
+
+.gallery a:hover {
+  background-color: #FF4655;
+  color: black;
+  transform: scale(1.05);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 8px;
 }
