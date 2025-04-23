@@ -238,3 +238,19 @@ form button:hover {
   border-radius: 5px;
   margin-bottom: 8px;
 }
+
+.gallery button {
+  padding: 10px;
+  background-color: #FF4655;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.gallery button:hover {
+  background-color: #e10600;
+  transform: scale(1.05);
+}
