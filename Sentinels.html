@@ -6,6 +6,12 @@
   <title>My Valorant Site - Home</title>
   <link rel="stylesheet" href="project.css" />
 </head>
+<script>
+  function toggleAbilities(agent) {
+    const abilityList = document.getElementById(agent + '-abilities');
+    abilityList.style.display = (abilityList.style.display === 'none') ? 'block' : 'none';
+  }
+</script>
 <body>
 
   
@@ -39,13 +45,33 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="sage-guide.html">Sage</a></td>
-            <td>Provides healing and barriers to keep the team safe.</td>
-          </tr>
+  <td><a href="sage-guide.html">Sage</a></td>
+  <td>
+    A supportive Sentinel with healing, slows, and barriers.
+    <br>
+    <button onclick="toggleAbilities('sage')">Show Abilities</button>
+    <ul id="sage-abilities" style="display: none;">
+      <li>Barrier Orb</li>
+      <li>Slow Orb</li>
+      <li>Healing Orb</li>
+      <li>Resurrection (Ultimate)</li>
+    </ul>
+  </td>
+</tr>
           <tr>
-            <td><a href="cypher-guide.html">Cypher</a></td>
-            <td>Uses surveillance and traps to control enemy movements.</td>
-          </tr>
+  <td><a href="cypher-guide.html">Cypher</a></td>
+  <td>
+    A surveillance expert who can gather intel and lock down flanks.
+    <br>
+    <button onclick="toggleAbilities('cypher')">Show Abilities</button>
+    <ul id="cypher-abilities" style="display: none;">
+      <li>Trapwire</li>
+      <li>Cyber Cage</li>
+      <li>Spycam</li>
+      <li>Neural Theft (Ultimate)</li>
+    </ul>
+  </td>
+</tr>
         </tbody>
       </table>
     </div>

@@ -6,6 +6,12 @@
   <title>My Valorant Site - Home</title>
   <link rel="stylesheet" href="project.css" />
 </head>
+<script>
+  function toggleAbilities(agent) {
+    const abilityList = document.getElementById(agent + '-abilities');
+    abilityList.style.display = (abilityList.style.display === 'none') ? 'block' : 'none';
+  }
+</script>
 <body>
 
   
@@ -39,13 +45,33 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="jett-guide.html">Jett</a></td>
-            <td>An agile entry fragger with high mobility and sharp reflexes.</td>
-          </tr>
-          <tr>
-            <td><a href="reyna-guide.html">Reyna</a></td>
-            <td>Capitalizes on kills to fuel her aggressive, self-sustaining play.</td>
-          </tr>
+  <td><a href="jett-guide.html">Jett</a></td>
+  <td>
+    An agile entry fragger with high mobility and sharp reflexes.
+    <br>
+    <button onclick="toggleAbilities('jett')">Show Abilities</button>
+    <ul id="jett-abilities" style="display: none;">
+      <li>Cloudburst</li>
+      <li>Updraft</li>
+      <li>Tailwind</li>
+      <li>Blade Storm (Ultimate)</li>
+    </ul>
+  </td>
+</tr>
+          <<tr>
+  <td><a href="reyna-guide.html">Reyna</a></td>
+  <td>
+    Capitalizes on kills to fuel her aggressive, self-sustaining play.
+    <br>
+    <button onclick="toggleAbilities('reyna')">Show Abilities</button>
+    <ul id="reyna-abilities" style="display: none;">
+      <li>Leer</li>
+      <li>Devour</li>
+      <li>Dismiss</li>
+      <li>Empress (Ultimate)</li>
+    </ul>
+  </td>
+</tr>
         </tbody>
       </table>
     </div>

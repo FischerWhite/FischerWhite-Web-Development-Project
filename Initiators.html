@@ -6,6 +6,12 @@
   <meta name="description" content="Explore Valorant agent guides, crosshair settings, map strategies, and top-tier gear recommendations to level up your game.">
   <link rel="stylesheet" href="project.css" />
 </head>
+<script>
+  function toggleAbilities(agent) {
+    const abilityList = document.getElementById(agent + '-abilities');
+    abilityList.style.display = (abilityList.style.display === 'none') ? 'block' : 'none';
+  }
+</script>
 <body>
 
   
@@ -39,13 +45,33 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="sova-guide.html">Sova</a></td>
-            <td>Excels at gathering intel and pinpointing enemy positions.</td>
-          </tr>
+  <td><a href="sova-guide.html">Sova</a></td>
+  <td>
+    An Initiator with recon abilities to gather intel from afar.
+    <br>
+    <button onclick="toggleAbilities('sova')">Show Abilities</button>
+    <ul id="sova-abilities" style="display: none;">
+      <li>Shock Bolt</li>
+      <li>Owl Drone</li>
+      <li>Recon Bolt</li>
+      <li>Hunter's Fury (Ultimate)</li>
+    </ul>
+  </td>
+</tr>
           <tr>
-            <td><a href="kayo-guide.html">KAY/O</a></td>
-            <td>Disrupts enemy abilities to create openings for his team.</td>
-          </tr>
+  <td><a href="kayo-guide.html">KAY/O</a></td>
+  <td>
+    An Initiator who suppresses enemy abilities and leads the charge.
+    <br>
+    <button onclick="toggleAbilities('kayo')">Show Abilities</button>
+    <ul id="kayo-abilities" style="display: none;">
+      <li>FRAG/ment</li>
+      <li>FLASH/drive</li>
+      <li>ZERO/point</li>
+      <li>NULL/cmd (Ultimate)</li>
+    </ul>
+  </td>
+</tr>
         </tbody>
       </table>
     </div>

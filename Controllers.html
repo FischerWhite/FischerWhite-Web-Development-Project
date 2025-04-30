@@ -6,6 +6,12 @@
   <title>My Valorant Site - Home</title>
   <link rel="stylesheet" href="project.css" />
 </head>
+<script>
+  function toggleAbilities(agent) {
+    const abilityList = document.getElementById(agent + '-abilities');
+    abilityList.style.display = (abilityList.style.display === 'none') ? 'block' : 'none';
+  }
+</script>
 <body>
 
   
@@ -39,13 +45,34 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="brimstone-guide.html">Brimstone</a></td>
-            <td>Uses smokes and incendiaries to control areas and shape engagements.</td>
-          </tr>
+  <td><a href="brimstone-guide.html">Brimstone</a></td>
+  <td>
+    A tactical Controller with powerful smokes and fire-based utility.
+    <br>
+    <button onclick="toggleAbilities('brimstone')">Show Abilities</button>
+    <ul id="brimstone-abilities" style="display: none;">
+      <li>Incendiary</li>
+      <li>Stim Beacon</li>
+      <li>Sky Smoke</li>
+      <li>Orbital Strike (Ultimate)</li>
+    </ul>
+  </td>
+</tr>
+
           <tr>
-            <td><a href="viper-guide.html">Viper</a></td>
-            <td>Deploys toxic screens and poisons to limit enemy movement.</td>
-          </tr>
+  <td><a href="viper-guide.html">Viper</a></td>
+  <td>
+    A poisonous Controller who uses chemical devices to control the battlefield.
+    <br>
+    <button onclick="toggleAbilities('viper')">Show Abilities</button>
+    <ul id="viper-abilities" style="display: none;">
+      <li>Snake Bite</li>
+      <li>Poison Cloud</li>
+      <li>Toxic Screen</li>
+      <li>Viper's Pit (Ultimate)</li>
+    </ul>
+  </td>
+</tr>
         </tbody>
       </table>
     </div>
