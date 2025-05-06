@@ -254,3 +254,84 @@ form button:hover {
   background-color: #e10600;
   transform: scale(1.05);
 }
+
+.about, .beginner-guide {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255,70,85,0.4);
+}
+
+.beginner-guide a {
+  color: #ff4655;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.beginner-guide a:hover {
+  text-decoration: underline;
+}
+
+.video-guide {
+  background-color: #141414;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255,70,85,0.4);
+}
+
+.video-guide a {
+  color: #ff4655;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.video-guide a:hover {
+  text-decoration: underline;
+}
+
+ .strategy-section {
+      background-color: #1a1a1a;
+      border-left: 4px solid #FF4655;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .strategy-section h3 {
+      color: #FF4655;
+      margin-bottom: 10px;
+    }
+
+    .strategy-section ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    .guide-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #FF4655;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .guide-button:hover {
+      background-color: #e10600;
+    }
+
+    .map-strat {
+      width: 90%;
+      max-width: 1000px;
+	
+    }
